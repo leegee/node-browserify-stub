@@ -5,7 +5,7 @@ var config = require('./package.json');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-  res.render('index.ejs');
+  res.render('index.js');
 });
 
 app.listen(config.port);
