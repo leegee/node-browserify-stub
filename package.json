@@ -1,0 +1,24 @@
+{
+  "name": "vdom-test",
+  "version": "0.1.0",
+  "port":"3030",
+  "scripts": {
+    "watch": "watchify client/main.js -o public/app.js -v -d",
+    "build": "browserify client/main.js -o public/app.js",
+    "start": "npm run watch & nodemon --debug server.js"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "nodemon": "^1.8.1",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4"
+  }
+}
