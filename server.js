@@ -1,6 +1,6 @@
-var express = require('express');
-var app = express();
-var config = require('./package.json');
+const express = require('express'),
+      app     = express();
+      config  = require('./package.json');
 
 app.use(express.static(__dirname + '/public'));
 
